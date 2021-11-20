@@ -1,4 +1,4 @@
-package oop.practica.practicum2;
+package oop.practica.practicum2a;
 
 public class Main {
     public static void main(String[] args) {
