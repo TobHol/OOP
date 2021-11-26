@@ -8,13 +8,8 @@ public class Rekening {
         this.number = number;
     }
 
-    public int getNumber(){
-        return this.number;
-    }
-
-    public double getBalance(){
-        return this.balance;
-    }
+    public int getNumber(){ return this.number; }
+    public double getBalance(){ return this.balance; }
 
     public void transaction(double transaction){
         this.balance += transaction;
