@@ -19,6 +19,7 @@ public class Voetbalclub {
             aantalVerloren += 1;
     }
 
+
     public int aantalGespeeld(){
         int total = aantalGelijk + aantalGewonnen + aantalVerloren;
         return total;
