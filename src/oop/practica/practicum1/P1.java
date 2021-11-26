@@ -40,7 +40,7 @@ public class P1 {
 
     public static void sawteethPattern(){
         for(int i = 0; i <10; i++){
-            if (Math.floorMod(i, 2) == 0){
+            if (i % 2 == 0){
                 System.out.println("s");
             }
             else {
