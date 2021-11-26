@@ -7,6 +7,9 @@ public class Voetbalclub {
     private int aantalGelijk;
 
     public Voetbalclub(String s) {
+        if(s == ""){
+            s = "FC";
+        }
         this.naam = s;
     }
 
@@ -19,6 +22,9 @@ public class Voetbalclub {
             aantalVerloren += 1;
     }
 
+    public String getNaam(){
+        return naam;
+    }
 
     public int aantalGespeeld(){
         int total = aantalGelijk + aantalGewonnen + aantalVerloren;

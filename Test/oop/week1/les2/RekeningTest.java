@@ -14,7 +14,7 @@ class RekeningTest {
     }
 
     @Test                                       // Annotation
-    public void testPositiveBalanceFunction(){
+    void testPositiveBalanceFunction(){
         r1.transaction(200);
         assertEquals(200, r1.getBalance(), "Not expected value returned");
     }
