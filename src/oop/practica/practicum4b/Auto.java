@@ -10,7 +10,7 @@ public class Auto {
     }
 
     public String toString(){
-        String s = String.format("  autotype: %s met prijs per dag: %.1f", type, prijsPerDag);
+        String s = String.format("%s met prijs per dag: %.1f", type, prijsPerDag);
         return s;
     }
 

@@ -53,12 +53,11 @@ public class AutoHuur {
             h = huurder.toString();
         }
         if (gehuurdeAuto != null){
-            auto = gehuurdeAuto.toString();
+            auto = "  autotype: " + gehuurdeAuto.toString();
         }
         if (huurder != null && gehuurdeAuto != null){
             prijs =  String.format("  aantal dagen: %d en dat kost %.1f", aantalDagen, totaalPrijs());
         }
-
         String s = auto +"\n" +  h + "\n" + prijs;
 
         return s;
