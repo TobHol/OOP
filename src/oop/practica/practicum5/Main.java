@@ -11,7 +11,7 @@ public class Main {
         k.voegLeerlingToe(l);
         System.out.println(k);
         k.wijzigCijfer(new String("Hans"), 7.6);
-        k.wijzigCijfer("Wim", 7.6);
+        k.wijzigCijfer("Klaas", 7.6);
         System.out.println(k.toString());
         System.out.println("Aantal leerlingen: " + k.aantalLeerlingen());
     }
