@@ -22,7 +22,6 @@ public class Klas {
         for(Leerling l: deLeerlingen){
             if (l.getNaam().equals(nm)){
                 l.setCijfer(nweCijfer);
-
             }
         }
     }

@@ -24,7 +24,7 @@ public class Game {
         return d;
     }
 
-//    public boolean equals(Game andereObject){
+//    public boolean equals(Game andereObject){ //gebruik geen Game, je wilt hier alles in kunnen gooien
 //        boolean x = false;
 //        if (andereObject.naam.equals(this.naam) && andereObject.releaseJaar == this.releaseJaar){
 //            x = true;
@@ -33,7 +33,7 @@ public class Game {
 //    }
 
     public boolean equals(Object andereObject) {
-        boolean gelijkeObjecten = false; // blijft false tenzij:
+        boolean gelijkeObjecten = false;                // blijft false tenzij:
         if (andereObject instanceof Game) {
             Game andereGame = (Game) andereObject;
             if (this.naam.equals(andereGame.naam) && this.releaseJaar == andereGame.releaseJaar) {
