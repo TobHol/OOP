@@ -10,7 +10,6 @@ public class StringProcessor {
             OpmaakProces nieuwProces = (OpmaakProces) proces;
             processen.add(nieuwProces);
         }
-
     }
 
     public String verwerk(String input){

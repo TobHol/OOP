@@ -8,11 +8,4 @@ public class HoofdletterProces implements OpmaakProces{
         s = s.toUpperCase();
         return s;
     }
-
-    public HoofdletterProces(){
-
-    }
-
-
-
 }

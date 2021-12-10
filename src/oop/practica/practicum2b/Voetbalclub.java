@@ -7,7 +7,7 @@ public class Voetbalclub {
     private int aantalGelijk;
 
     public Voetbalclub(String s) {
-        if(s == ""){
+        if(s == null || s == ""){
             s = "FC";
         }
         this.naam = s;

@@ -23,14 +23,14 @@ public class Persoon {
 
     public boolean verkoop(Game gm, Persoon p){
         boolean b = false;
-        for(Game g: mijnGames){
-            if(g.equals(gm)){
-                if(p.koop(g)){
-                    this.budget += g.huidigeWaarde();
-                    this.mijnGames.remove(g);
-                    b = true;
-                    return b;
-                }
+        if(mijnGames.contains(gm)) {
+            if (p.koop(gm)) {
+                this.budget += gm.huidigeWaarde();
+                //dit kan alleen omdat remove gebruikt ook equals
+                // equals is overriden in game
+                this.mijnGames.remove(gm);
+                b = true;
+                return b;
             }
         }
         return b;
@@ -45,8 +45,6 @@ public class Persoon {
                         b = true;
                     }
                 }
-
-
         return b;
     }
 

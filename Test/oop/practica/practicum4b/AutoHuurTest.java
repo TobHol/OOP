@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AutoHuurTest {
+    //test alleen maar tostring()
+    // test ook de functies zelf
     AutoHuur ah1;
     @BeforeEach
     public void init(){
@@ -31,16 +33,9 @@ class AutoHuurTest {
         ah1.setHuurder(kt);
         assertEquals("  er is geen auto bekend\n" +"  op naam van: Jansen (korting: 20,0%)\n" + "  aantal dagen: 0 en dat kost 0.0",ah1.toString());
     }
-    @Test
-    public void geenIdee(){
-        Klant kt = new Klant("Jansen");
-        kt.setKorting(20);
-        ah1.setHuurder(kt);
-        assertEquals("  er is geen auto bekend\n" +"  op naam van: Jansen (korting: 20,0%)\n" + "  aantal dagen: 0 en dat kost 0.0",ah1.toString());
-    }
 
     @Test
-    public void totaalAantalPrijsKortingKlant(){
+    public void toStringTotaalAantalPrijsKortingKlant(){
         Klant kt = new Klant("Jansen");
         ah1.setHuurder(kt);
         Auto at1 = new Auto("Fiat", 20);
@@ -50,7 +45,7 @@ class AutoHuurTest {
     }
 
     @Test
-    public void totaalAantalPrijsGeenAantalDagen(){
+    public void toStringTotaalAantalPrijsGeenAantalDagen(){
         Klant kt = new Klant("Jansen");
         ah1.setHuurder(kt);
         Auto at1 = new Auto("Fiat", 20);

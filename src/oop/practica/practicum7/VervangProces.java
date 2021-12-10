@@ -14,6 +14,4 @@ public class VervangProces implements OpmaakProces{
         input = input.replace(this.oud, this.nieuw);
         return input;
     }
-
-
 }

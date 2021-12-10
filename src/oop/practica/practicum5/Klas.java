@@ -10,6 +10,7 @@ public class Klas {
         this.klasCode = kC;
     }
 
+    //check hier of de leerling al bestaat
     public void voegLeerlingToe(Leerling l){
         deLeerlingen.add(l);
     }
