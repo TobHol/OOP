@@ -17,4 +17,10 @@ class FietsTest {
         assertEquals(f1.huidigeWaarde(), 218.70);
     }
 
+    @Test
+    public void testEqualsComputer(){
+        Fiets f2 = new Fiets("Batavus", 300, 2018, 88088);
+        assertEquals(f1, f2);
+    }
+
 }
