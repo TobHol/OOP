@@ -30,8 +30,7 @@ public class Auto extends Voertuig{
         if (obj instanceof Auto){
             Auto andereAuto = (Auto) obj;
             if (this.kenteken.equals(andereAuto.kenteken)
-                && this.bouwjaar == andereAuto.bouwjaar
-                && this.nieuwprijs == andereAuto.nieuwprijs){
+                    && super.equals(andereAuto)){
                 x = true;
             }
         }

@@ -3,7 +3,7 @@ package oop.practica.practicum8;
 public class Main {
 
     public static void main(String[] args) {
-        BedrijfsInventaris b1 = new BedrijfsInventaris("Koopjes.com", 30000);
+        BedrijfsInventaris b1 = new BedrijfsInventaris("Koopjes.com", 1100);
 
         Computer c1 = new Computer("Acer", "2021.0215.52", 234.54, 2018);
         Computer c2 = new Computer("Acer", "2021.0215.52", 234.54, 2018);

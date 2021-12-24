@@ -16,8 +16,7 @@ public class Fiets extends Voertuig{
         if(obj instanceof Fiets){
             Fiets andereFiets = (Fiets) obj;
             if(this.framenummer == andereFiets.framenummer
-                && this.bouwjaar == andereFiets.bouwjaar
-                && this.nieuwprijs == andereFiets.nieuwprijs){
+                && super.equals(andereFiets)){
                 x = true;
             }
         }

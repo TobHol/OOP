@@ -16,9 +16,23 @@ public abstract class Voertuig implements Goed{
         this.bouwjaar = jr;
     }
 
+    public boolean equals(Object obj){
+        boolean x = false;
+        if (obj instanceof Voertuig){
+            Voertuig anderVoertuig = (Voertuig) obj;
+            if(this.type.equals(anderVoertuig.type) &&
+               this.nieuwprijs == anderVoertuig.nieuwprijs &&
+               this.bouwjaar == anderVoertuig.bouwjaar){
+                x = true;
+            }
+        }
+        return x;
+    }
+
     public String toString(){
         String s ="";
         String euro = "\u20ac";
+        // kan alleen huidigewaarde aanroepen omdat het een abstracte klasse is en weet dat de objecten hiervan wel deze methode zullen hebben.
         s = String.format("Voertuig: %s met bouwjaar %d heeft een waarde van: %s%.2f", type, bouwjaar, euro, huidigeWaarde());
         return s;
     }
